@@ -1,0 +1,232 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#view div{
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+header{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+  }
+  header h2{
+    padding-right: 850px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+  }
+  header .in{
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 30px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 200px;
+    cursor: pointer;
+    margin-right: 20px;
+
+
+  }
+  .book-container{
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 12px 3px rgba(0,0,0,0.1);
+  }
+  .container h2{
+    text-align: center;
+    color: blue;
+  }
+  .book-container:hover{
+    transform: translate(-7px);
+  }
+  .abb{
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(63, 63, 63, 0.1);
+
+  }
+  #popup{
+    background-color: blue ;
+    border-radius: 100%;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #container h2{
+    color: rgb(255, 208, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  #popup-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;position: absolute;
+    left: 0;top: 0;z-index: 1;
+    display: none;
+  }
+  h3{
+    margin-bottom: 10px;
+  }
+  #popup-box{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    background-color: blue;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 2;box-shadow: 0 4px 12px 4px rgba(0,0,0,0.1);
+    display: none;
+    
+  }
+  #popup-box input{
+    background:transparent;border: none;
+    border-bottom: solid black 2px;
+    width: 100%;
+    height: 30px;
+    margin: 8px;
+    font-size: 20px;
+  }
+  #popup-box textarea{
+    background:transparent;
+    border: solid black 2px;
+    width: 100%;
+    height: 30px;
+    margin: 8px;
+    font-size: 20px;
+    height: 80px;
+  }
+  #popup-box h2{
+    color: white;
+    margin-bottom: 5px;
+  }
+  #popup-box input::placeholder{
+    color: black;
+  }
+  #popup-box textarea::placeholder{
+    color: black;
+  }
+  #popup-box button{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #popup-box input:focus{
+    outline: none;
+  }
+  #popup-box textarea:focus{
+    outline: none;
+  }
+  .book-container{
+    display: inline-block;
+  }
+  #view{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 400px;
+    flex-direction: column;
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 3;
+  }
+    #view svg{
+    width: 30px;
+    margin-left: 370px;
+    margin-top: 2px;
+    height: auto;
+    }
+  #view input{
+    margin-top: 4px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;color: rgb(34, 193, 195);
+    border-radius: 4px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+  }
+  #view h2{
+    text-align: center;
+    color: blue;
+    font-family: 'Segoe UI';
+    padding-bottom: 4px;
+    
+  
+  }
+  #view button{
+    background-color: blue; color:rgb(255, 255, 255) ;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  #view input:focus{
+    outline: none;
+  }
+  #view .error{
+    color: red;
+    font-size: 15px;
+    padding-top: 4px;
+  }
+  #view span{
+    margin-top: 10px;
+  }
+  #view.success input{
+    border-color: #0cc477;
+  }
+
+  #view.error input{
+    background-color: rgb(206, 67, 67);
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="c.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+</head>
+<body>
+  <header>
+    <h2>Booksky</h2> <button class="in">LOGIN</button>
+  </header>
+  <div class="container">
+    <div class="book-container">
+      <h2>Tittle</h2>
+      <h3>sundhar</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo numquam expedita facere tempore animi id magnam, facilis architecto in est nemo optio quidem dolorem nihil blanditiis dolorum recusandae voluptas sit?</p>
+      <button class="abb" onclick="deletebook(event)">Delete</button>
+    </div>
+  </div id="book-container">
+  <button  id="popup">+</button>
+  <div id="popup-overlay"></div>
+  <div id="popup-box">
+    <h2>Add Book</h2>
+    <div >
+    <input id="book-title-input" type="text" placeholder="Book Tittle" >
+    <input id="book-author-input" type="text" placeholder="Book Author" >
+    <textarea id="text-area-input" placeholder="Short Description"></textarea>
+  </div>
+    <button id="add-box">ADD</button> <button class="cancel">CANCEL</button>
+  </div> 
+
+  <form id="view">
+    <svg id="can" xmlns="http://www.w3.org/2000/svg" fill="#ff0000" viewBox="0 0 300.003 300.003"><path d="M150 0C67.16 0 0 67.16 0 150s67.16 150 150 150 150-67.16 150-150S232.84 0 150 0m56.58 207.17a15.34 15.34 0 01-21.68 0l-34.13-34.13-35.69 35.69a15.33 15.33 0 01-21.67-21.68l35.68-35.68-33.21-33.23a15.34 15.34 0 0121.68-21.68l33.22 33.22 31.67-31.67a15.33 15.33 0 0121.68 21.68l-31.67 31.67 34.13 34.13a15.33 15.33 0 01-.01 21.68"/></svg>
+  <h2>Rejisteration</h2>
+  <span>Name:</span>
+    <input type="text" id="name">
+      <div id="error"></div>
+  <span>e-mail:</span>
+    <input type="email" id="mail">
+      <div id="errorm"></div>
+  <span>password:</span>
+    <input type="password" id="pass">
+      <div id="errorp"></div>
+  <span>Remember password:</span>
+    <input type="password" id="cpass">
+      <div id="errorpr"></div>
+  <button>Rejister</button>
+  </form>
+
+</body>
+<script src="sund.js"></script>
+</html>
